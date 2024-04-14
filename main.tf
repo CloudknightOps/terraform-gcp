@@ -25,6 +25,8 @@ resource "google_compute_instance" "ec2" {
     }
   }
   allow_stopping_for_update = true
-
 }
+
+
+
 
