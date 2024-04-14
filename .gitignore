@@ -9,6 +9,7 @@
 *.tfvars
 *.tfplan
 *.tfout
+*.terraform
 
 # Ignore crash log files
 crash.log
