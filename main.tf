@@ -1,4 +1,11 @@
 
+terraform {
+  backend "gcs" {
+  bucket = "${var.bucket_name}"
+  prefix = "terraform/state" 
+  }
+}
+
 # Calling Network module
 
 module "dev_network" {
