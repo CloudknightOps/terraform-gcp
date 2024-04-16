@@ -22,5 +22,6 @@ variable "Bucket_name" {
     type = string
     description = "Name of cloud storage bucket"
     default = "cloudknight-bucket234"
-  
 }
+
+variable "network" {}
