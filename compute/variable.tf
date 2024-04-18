@@ -1,6 +1,6 @@
 variable "instance_name" {
   type        = string
-  description = "Name for Good compute Instance"
+  description = "Name for Google compute Instance"
   default     = "test-vm"
 }
 
@@ -24,4 +24,6 @@ variable "Bucket_name" {
     default = "cloudknight-bucket234"
 }
 
-variable "network" {}
+variable "network_id" {
+  description = "The network ID to attach the instance to"
+}

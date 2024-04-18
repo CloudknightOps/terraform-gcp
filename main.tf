@@ -1,7 +1,7 @@
 
 terraform {
   backend "gcs" {
-  bucket = "${var.bucket_name}"
+  bucket = "cloudknight-bucket234"
   prefix = "terraform/state" 
   }
 }
@@ -16,6 +16,6 @@ module "dev_network" {
 # Calling Compute module
 module "compute" {
   source  = "./compute"
-  network = var.network
+  network_id = module.dev_network.network_id 
 }
 

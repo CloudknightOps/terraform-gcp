@@ -8,7 +8,7 @@ resource "google_compute_instance" "ec2" {
     }
   }
   network_interface {
-    network = "${var.network}"
+    network = "${var.network_id}"
     access_config {
       nat_ip = google_compute_address.vm_static_ip.address
 
